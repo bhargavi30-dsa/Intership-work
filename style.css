@@ -1,0 +1,33 @@
+.img {
+    padding-left: 400px;
+    top: 45px;
+    
+}
+
+
+
+
+
+h1 {
+    position:absolute;
+    margin-left: 170px;
+    top: 150px;
+    color: rgb(18, 17, 18);
+    height: 20px;
+    
+}
+button {
+    position: absolute;
+    margin-left: 170px;
+    font-display:inherit;
+    color: rgb(15, 15, 15);
+    background-color: aliceblue;
+    height: 30px; 
+    top: 300px;  
+}
+p {
+    position: absolute;
+    padding-left: 350px;
+    padding-top: 50px;
+    
+}

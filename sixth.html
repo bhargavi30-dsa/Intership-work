@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+  <legend>Form Creation</legend>
+    <form style="border: 3px solid;"> <br>
+        <label for="name">Name:</label>  
+        <input style="color: red; margin-left:10px ;" type="text" id="name" name="Name" placeholder="Click Here"> <br>
+        <label for="email">Email:</label> 
+        <input id="email" style="color: black; margin-left:10px" type="email"  placeholder="Enter Your email"> <br>
+        <label for="password">Password:</label>
+        <input style=" margin-left:10px"    type="password" placeholder="Enter Your password">
+    
+        <h5>You are from?</h5>
+        <input  type="radio" id="maharashtra" name="State" value="Maaharashtra">
+        <label style="color: blue;" for="maharashtra">Maharashtra</label><br>
+        <input type="radio" id="New Delhi" name="State" value="New Delhi">
+        <label style="color: rgb(255, 0, 38);" for="New Delhi">New Delhi</label>
+        <h5>Why do you want to join in this?</h5>
+        <textarea style="color:black;" rows="10" cols="50" placeholder="Type Your Message Here"></textarea><br>
+        <h5>select your favourite fruit</h5>
+        <input type="checkbox" id="apple" name="Fruits" value="apple">
+        <label style="color:chocolate;" for="apple">Apple</label><br>
+        <input type="checkbox" id="mango" name="Fruits" value="Mango">
+        <label style="color:rgb(30, 126, 210);"for="mango">Mango</label><br>
+        <input type="checkbox" id="Sapota" name="Fruits" value="Sapota">
+        <label style="color:rgb(210, 30, 165);" for="Sapota">Sapota</label><br>
+        <p>Select Your Country</p>
+        <select id="country" name="country">
+            <option style="color: rgb(18, 144, 144);"    value="India" selected>India</option> <!--defalut-->
+            <option style="color: rgb(199, 17, 17);" value="UsA">USA</option>
+            <option style="color: rgb(213, 210, 30);" value="Australia">Australia</option>
+            <option style="color: rgb(122, 20, 239);"value="Nepal">Nepal</option>
+            <option style="color: rgb(98, 65, 165);"value="Indonesia">Indonesia</option>
+        </select>
+    </fieldset>
+        <br>
+        <input style="color:rgb(13, 13, 13); background-color: rgb(23, 226, 8);" type="submit">
+    </form>
+    <hr>
+
+</body>
+</html>

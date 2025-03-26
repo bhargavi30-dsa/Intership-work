@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--from js 7th assignemt(4th question)-->
+    <script src="hello.js"></script>
+    <!--8th assignemt(1st question)-->
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+    <p>This is the fourth paragraph.</p>
+    <script>
+        // Get the first paragraph using querySelector
+        const firstParagraph = document.querySelector('p');
+        console.log(firstParagraph.textContent); 
+    </script>
+    <!--5th question(assgn-8)-->  
+    <p id="para1">This is the first paragraph.</p>
+    <p id="para2">This is the second paragraph.</p>
+    <p id="para3">This is the third paragraph.</p>
+    <p id="para4">This is the fourth paragraph.</p>
+    <script>
+        const para1 = document.querySelector('#para1');
+        const para2 = document.querySelector('#para2');
+        const para3 = document.querySelector('#para3');
+        const para4 = document.querySelector('#para4');
+        console.log(para1.textContent);
+        console.log(para2.textContent); 
+        console.log(para3.textContent); 
+        console.log(para4.textContent); 
+    </script>
+    <!--7th assignment (6th question)-->
+    
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+    <p>This is the fourth paragraph.</p>
+    <script>
+        // Get all <p> elements using querySelectorAll()
+        const paragraphs = document.querySelectorAll('p');
+        console.log('Using querySelectorAll:');
+        paragraphs.forEach(p => console.log(p.textContent));
+        // Get all <p> elements using getElementsByTagName()
+        const paraList = document.getElementsByTagName('p');
+        console.log('Using getElementsByTagName:');
+        for (let i = 0; i < paraList.length; i++) {
+            console.log(paraList[i].textContent);
+        }
+    </script>
+<!--6th question(assignment 8)-->
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<p>This is the third paragraph.</p>
+<p>This is the fourth paragraph.</p>
+
+<script>
+    // Get all <p> elements as a NodeList using querySelectorAll()
+    const paragraphs = document.querySelectorAll('p');
+    // Loop through using forEach()
+    console.log('Using forEach:');
+    paragraphs.forEach(p => console.log(p.textContent));
+    // Loop through using for...of
+    console.log('Using for...of:');
+    for (const p of paragraphs) {
+        console.log(p.textContent);
+    }
+    // Loop through using a regular for loop
+    console.log('Using for loop:');
+    for (let i = 0; i < paragraphs.length; i++) {
+        console.log(paragraphs[i].textContent);
+    }
+</script>
+<!--assignment 8-->
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<p>This is the third paragraph.</p>
+<p>This is the fourth paragraph.</p>
+
+<script>
+    // Get all <p> elements as a NodeList
+    const paragraphs = document.querySelectorAll('p');
+
+    // Set the text content of the fourth paragraph
+    paragraphs[3].textContent = 'Fourth paragraph';
+</script>
+<!--assignment 8(5th question)-->
+<p id="message"></p>
+<script>
+    function timer() {
+        setTimeout(() => {
+            document.getElementById('message').textContent = 'Time out';
+        }, 5000); // 5000 milliseconds = 5 seconds
+    }
+    // Call the timer function
+    timer();
+</script>
+<!--assignment 9-->
+<h2>BMI Calculator</h2>
+<label for="weight">Weight (kg):</label>
+<input type="number" id="weight" placeholder="Enter weight" /><br /><br />
+<label for="height">Height (m):</label>
+<input type="number" id="height" placeholder="Enter height" /><br /><br />
+<button onclick="calculateBMI()">Calculate BMI</button>
+<p id="result"></p>
+<p id="note"></p>
+
+<script>
+    function calculateBMI() 
+        const weight = parseFloat(document.getElementById('weight').value);
+        const height = parseFloat(document.getElementById('height').value);
+
+        if (!weight || !height) {
+            document.getElementById('result').textContent = 'Please enter valid values.';
+            document.getElementById('note').textContent = '';
+            return;
+        }
+
+        // Calculate BMI
+        const bmi = weight / (height * height);
+        document
+</script>
+</body>
+</html>
